@@ -5,6 +5,14 @@ body{
     font-size: 12px;
 }
 
+.clear_left {
+    clear: left;
+}
+
+.clear_right {
+    clear: right;
+}
+
 #header{
     background: #000;
     height: 60px;
@@ -36,9 +44,10 @@ body{
 }
 
 #main{
-    border: 1px solid orange;
+    //border: 1px solid orange;
     height: 1200px;
     margin-left: 230px;
+    padding-top: 57px;
 }
 
 #to_main{
@@ -67,9 +76,46 @@ body{
     padding: 10px;
 }
 
-.title{
+.main_block {
+    border: 1px solid black;
+}
+
+.main_block h3 {
+    background: #c00;
+    display: block;
+    margin: 0px;
+    padding: 4px 8px;
+}
+
+.main_block h3 a {
     color: white;
     text-decoration: underline;
     padding-left: 25px;
     background: url("../i/bullet.gif") no-repeat left;
+    text-transform: uppercase;
+    font-size: 102%;
+    font-weight: normal;
+    font-family: Arial;
+    letter-spacing: 0.5px;
+}
+
+.main_block h3 a:hover {
+    text-decoration: none;
+}
+
+.main_block .content {
+    overflow: hidden;
+}
+
+.main_block img {
+    width: 120px;
+    padding: 5px;
+    border: 1px solid #d3d3d3;
+    float: left;
+}
+
+.main_block .content p {
+    margin: 0px;
+    margin-left: 140px;
+    text-align: justify;
 }
